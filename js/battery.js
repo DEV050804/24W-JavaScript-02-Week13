@@ -21,6 +21,15 @@ function updateBatteryStatus(battery) {
     // STEP 3c: Update the charge level
     chargeLevel.textContent = (battery.level * 100) + "%";
     chargeMeter.value = (battery.level * 100);
+
+      // Construct RoboHash API URL
+      let percentage = Math.floor(battery.level * 100);
+      let roboHashUrl = `https://robohash.org/2607:fea8:fc30:7bf1:d821:58c7:c9d6:c07.png`;
+  
+      // Display image on the HTML page
+      let img = document.createElement('img');
+      img.src = roboHashUrl;
+      document.body.appendChild(img)
 }
 
 
