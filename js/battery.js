@@ -24,7 +24,7 @@ function updateBatteryStatus(battery) {
 
       // Construct RoboHash API URL
       let percentage = Math.floor(battery.level * 100);
-      let roboHashUrl = `https://robohash.org/2607:fea8:fc30:7bf1:d821:58c7:c9d6:c07.png`;
+      let roboHashUrl = 'https://robohash.org/100percent.png';
   
       // Display image on the HTML page
       let img = document.createElement('img');
